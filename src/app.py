@@ -24,8 +24,7 @@ topic_str = os.getenv("V_TOPICS")
 version = "v1.0.17___2024-06-29"
 if topic_str == None:
     print(header()+" [ERR] NO topic_str PARAM!")
-    topic_str = "controller,datacollector,mobile,var,varfast,status" # example
-    # topic_str = "controller,datacollector,mobile,var,varfast,logs,status" # example
+    topic_str = "topic1,topic2,topic3/subtopic1,topic3/subtopic2" # example
     time.sleep(1)
 if broker == None:
     print(header()+" [ERR] NO broker PARAM!")
